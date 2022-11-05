@@ -1,0 +1,24 @@
+/*
+ * no_button_pressed_fsm.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: A.Tuan
+ */
+
+#include "no_button_pressed_fsm.h"
+
+int one_second = 100;
+
+void no_button_pressed_fsm(){
+	switch(status){
+	case autoDec:
+		one_second--;
+		if(one_second <= 0) {
+			global_counter--;
+			one_second = 100;
+		}
+		break;
+	default:
+		break;
+	}
+}

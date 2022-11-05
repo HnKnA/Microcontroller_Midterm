@@ -1,0 +1,11 @@
+/*
+ * global.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: A.Tuan
+ */
+
+#include "global.h"
+
+int global_counter = 1;
+

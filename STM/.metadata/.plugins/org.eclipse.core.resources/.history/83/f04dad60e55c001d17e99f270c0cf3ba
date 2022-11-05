@@ -1,0 +1,20 @@
+/*
+ * global.h
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: A.Tuan
+ */
+
+#ifndef INC_GLOBAL_H_
+#define INC_GLOBAL_H_
+
+extern int global_counter;
+
+extern int status;
+
+int mINIT = 1;
+int mRESET = 2;
+int mINC = 3;
+int mDEC = 4;
+
+#endif /* INC_GLOBAL_H_ */

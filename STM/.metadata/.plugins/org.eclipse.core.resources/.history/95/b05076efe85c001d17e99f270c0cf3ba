@@ -1,0 +1,32 @@
+/*
+ * normal_fsm.c
+ *
+ *  Created on: Nov 5, 2022
+ *      Author: A.Tuan
+ */
+
+#include "normal_fsm.h"
+
+void fsm_simple_buttons_run (){
+	switch(status){
+	case 1:
+		if(isButton1Pressed() == 1){
+			status = 2;
+		}
+
+		break;
+	case 2:
+		if(isButton1Pressed() == 1){
+			global_counter++;
+			display7SEG(global_counter);
+			status = 1;
+		}
+		break;
+	case 3:
+		break;
+	case 4:
+		break;
+	default:
+		break;
+	}
+}

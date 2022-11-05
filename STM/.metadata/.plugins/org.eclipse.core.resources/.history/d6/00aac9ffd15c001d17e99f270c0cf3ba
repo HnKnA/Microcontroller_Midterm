@@ -1,0 +1,27 @@
+/*
+ * button.h
+ *
+ *  Created on: Sep 24, 2022
+ *      Author: A.Tuan
+ */
+
+#ifndef INC_BUTTON_H_
+#define INC_BUTTON_H_
+#include "main.h"
+
+
+#define NORMAL_STATE SET
+#define PRESSED_STATE RESET
+
+
+int isButton1Pressed();
+int isButton2Pressed();
+int isButton1LongPressed();
+int isButton2LongPressed();
+
+
+void getKeyInput1();
+void getKeyInput2();
+
+
+#endif /* INC_BUTTON_H_ */
